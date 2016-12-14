@@ -279,9 +279,19 @@ namespace NeighbourRings1
         }
     }
 
+    /// <summary>
+    /// Data class that stores row & column indices.
+    /// </summary>
     class CellPoint
     {
+        /// <summary>
+        /// The row index of the cell.
+        /// </summary>
         public int X { get; set; }
+
+        /// <summary>
+        /// The column index of the cell.
+        /// </summary>
         public int Y { get; set; }
     }
 }
