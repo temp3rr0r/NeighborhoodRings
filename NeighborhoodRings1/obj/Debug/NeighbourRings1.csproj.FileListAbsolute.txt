@@ -1,0 +1,9 @@
+c:\users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\bin\Debug\NeighbourRings1.exe.config
+c:\users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\bin\Debug\NeighbourRings1.exe
+c:\users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\bin\Debug\NeighbourRings1.pdb
+c:\users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\obj\Debug\NeighbourRings1.csprojResolveAssemblyReference.cache
+c:\users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\obj\Debug\NeighbourRings1.FormNeighbourIndexFinder.resources
+c:\users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\obj\Debug\NeighbourRings1.Properties.Resources.resources
+c:\users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\obj\Debug\NeighbourRings1.csproj.GenerateResource.Cache
+c:\users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\obj\Debug\NeighbourRings1.exe
+c:\users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\obj\Debug\NeighbourRings1.pdb
