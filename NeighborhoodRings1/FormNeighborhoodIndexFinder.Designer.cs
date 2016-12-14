@@ -1,4 +1,4 @@
-﻿namespace NeighborhoodRings1
+﻿namespace NeighbourRings1
 {
     partial class FormNeighborhoodIndexFinder
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFindNeighbours = new System.Windows.Forms.Button();
             this.cbCellIndexI = new System.Windows.Forms.ComboBox();
             this.cbCellIndexJ = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -59,15 +59,15 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnFindNeighbours
             // 
-            this.button1.Location = new System.Drawing.Point(235, 349);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Find Neighbours";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnFindNeighbours.Location = new System.Drawing.Point(235, 349);
+            this.btnFindNeighbours.Name = "btnFindNeighbours";
+            this.btnFindNeighbours.Size = new System.Drawing.Size(147, 23);
+            this.btnFindNeighbours.TabIndex = 0;
+            this.btnFindNeighbours.Text = "Find Neighbours";
+            this.btnFindNeighbours.UseVisualStyleBackColor = true;
+            this.btnFindNeighbours.Click += new System.EventHandler(this.btnFindNeighbours_Click);
             // 
             // cbCellIndexI
             // 
@@ -348,7 +348,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grpCellularAutomataModel);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnFindNeighbours);
             this.Name = "FormNeighborhoodIndexFinder";
             this.Text = "Moore Neighborhood Ring Index finder";
             this.Load += new System.EventHandler(this.FormNeighbourIndexFinder_Load);
@@ -364,7 +364,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFindNeighbours;
         private System.Windows.Forms.ComboBox cbCellIndexI;
         private System.Windows.Forms.ComboBox cbCellIndexJ;
         private System.Windows.Forms.Label label4;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace NeighborhoodRings1
+namespace NeighbourRings1
 {
     public partial class FormNeighborhoodIndexFinder : Form
     {
@@ -22,16 +22,37 @@ namespace NeighborhoodRings1
             cbCellCountY.SelectedIndex = 0;
         }
 
+        /// <summary>
+        /// Returns total cell count for the specific X * Y grid.
+        /// </summary>
+        /// <param name="cellCountX">Number of grid rows.</param>
+        /// <param name="cellCountY">Number of grid columns</param>
+        /// <returns>Total cell count, integer.</returns>
         private int GetCellCount(int cellCountX, int cellCountY)
         {
             return cellCountX * cellCountY;
         }
-        
-        private int GetMaxNeighbourhoodRings(int cellCountX, int cellCountY)
+
+        /// <summary>
+        /// Returns the max possible neighborhood rings, for the specific X * Y grid.
+        /// </summary>
+        /// <param name="cellCountX">Number of grid rows.</param>
+        /// <param name="cellCountY">Number of grid columns</param>
+        /// <returns>Max possible rings, for every cell i nthe X * Y grid, integer.</returns>
+        private int GetMaxNeighborhoodRings(int cellCountX, int cellCountY)
         {
             return Math.Max(cellCountX - 1, cellCountY - 1);
         }
         
+        /// <summary>
+        /// Returns all the moore neighbour indices in a List collection, given a specific grid X * Y,
+        /// specific cell index and specific moore neighborhood ring.
+        /// </summary>
+        /// <param name="cellX">Row, X index of the cell.</param>
+        /// <param name="cellY">Column, Y index of the cell.</param>
+        /// <param name="neighbourRing">Moore neighborhood ring.</param>
+        /// <returns>List of cell points, indices of all the existing neighbour indices of the specific grid
+        /// and the specific cell & moore neighborhood ring.</returns>
         private List<CellPoint> GetNeighboursIndicesList(int cellX, int cellY, int neighbourRing)
         {
             HashSet<CellPoint> returningCellNeighbourseHashSet = new HashSet<CellPoint>();
@@ -131,6 +152,14 @@ namespace NeighborhoodRings1
             return new List<CellPoint>(returningCellNeighbourseHashSet);
         }
 
+        /// <summary>
+        /// Checks if the specific cell point has valid indices within the 2 dimensional
+        /// space of a given X * Y grid.
+        /// </summary>
+        /// <param name="currentCellPoint">The X, Y indices of the cell in check.</param>
+        /// <param name="cellCountX">Count of rows, X of the grid.</param>
+        /// <param name="cellCountY">Count of columns, Y of the grid.</param>
+        /// <returns>True if the cell is indeed inside the grid of size X * Y.</returns>
         private bool IsPointInGrid(CellPoint currentCellPoint, int cellCountX, int cellCountY)
         {
             bool returningIsInGrid = currentCellPoint.X >= 0 && currentCellPoint.Y >= 0 & currentCellPoint.X < cellCountX &&
@@ -139,6 +168,9 @@ namespace NeighborhoodRings1
             return returningIsInGrid;
         }
 
+        /// <summary>
+        /// Updates the Combo box ui controls of the cell indices and neighbourhood.
+        /// </summary>
         private void UpdateControls()
         {
             int cellCountX;
@@ -150,7 +182,7 @@ namespace NeighborhoodRings1
                 {
                     txtCellCount.Text = GetCellCount(cellCountX, cellCountY).ToString();
 
-                    int maxNeighbourRings = GetMaxNeighbourhoodRings(cellCountX, cellCountY);
+                    int maxNeighbourRings = GetMaxNeighborhoodRings(cellCountX, cellCountY);
 
                     cbNeighbourRing.Items.Clear();
                     for (int i = 1; i <= maxNeighbourRings; i++)
@@ -184,11 +216,9 @@ namespace NeighborhoodRings1
             UpdateControls();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Updates the Combo box ui controls of the neighbours.
+        /// </summary>
         private void UpdateNeighbours()
         {
             int maxNeighbourCells = 0;
@@ -209,6 +239,9 @@ namespace NeighborhoodRings1
             UpdateCellIndexNeighbours();
         }
 
+        /// <summary>
+        /// Updates the Combo box ui controls of the cell indices.
+        /// </summary>
         private void UpdateCellIndexNeighbours()
         {
             int neighbourRing;
@@ -238,6 +271,11 @@ namespace NeighborhoodRings1
         private void cbCellIndexJ_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateCellIndexNeighbours();
+        }
+
+        private void btnFindNeighbours_Click(object sender, EventArgs e)
+        {
+            // TODO: Output/store all the neighbourhood indices.
         }
     }
 
