@@ -6,6 +6,8 @@ namespace NeighbourRings1
 {
     public partial class FormNeighborhoodIndexFinder : Form
     {
+        private List<CellPoint> _neighbourCellPoints = new List<CellPoint>();
+
         public FormNeighborhoodIndexFinder()
         {
             InitializeComponent();
@@ -162,7 +164,7 @@ namespace NeighbourRings1
         /// <returns>True if the cell is indeed inside the grid of size X * Y.</returns>
         private bool IsPointInGrid(CellPoint currentCellPoint, int cellCountX, int cellCountY)
         {
-            bool returningIsInGrid = currentCellPoint.X >= 0 && currentCellPoint.Y >= 0 & currentCellPoint.X < cellCountX &&
+            bool returningIsInGrid = currentCellPoint.X >= 0 && currentCellPoint.Y >= 0 && currentCellPoint.X < cellCountX &&
                 currentCellPoint.Y < cellCountY;
 
             return returningIsInGrid;
@@ -254,9 +256,9 @@ namespace NeighbourRings1
                 {
                     if (cellX >= 0 && cellY >= 0)
                     {
-                        List<CellPoint> neighbourCellPoints = GetNeighboursIndicesList(cellX, cellY, neighbourRing);
+                        _neighbourCellPoints = GetNeighboursIndicesList(cellX, cellY, neighbourRing);
 
-                        txtNeighbourCells.Text = neighbourCellPoints.Count.ToString();
+                        txtNeighbourCells.Text = _neighbourCellPoints.Count.ToString();
 
                     }
                 }
@@ -275,7 +277,13 @@ namespace NeighbourRings1
 
         private void btnFindNeighbours_Click(object sender, EventArgs e)
         {
-            // TODO: Output/store all the neighbourhood indices.
+            // Output/store all the neighbourhood indices.
+            string ringIdString = $"Cell i,j: [{cbCellIndexI.SelectedIndex}, " +
+                                  $"{cbCellIndexJ.SelectedIndex}] (Ring {cbNeighbourRing.Text}:)\n";
+            foreach (CellPoint cellPoint in _neighbourCellPoints.ToArray())
+                ringIdString += $"[{cellPoint.X}, {cellPoint.Y}]\n";
+
+            MessageBox.Show($@"Ring ids: " + ringIdString);
         }
     }
 

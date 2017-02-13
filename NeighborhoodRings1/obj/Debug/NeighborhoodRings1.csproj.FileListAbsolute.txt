@@ -8,11 +8,10 @@ C:\Users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\Neighbo
 C:\Users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\obj\Debug\NeighbourRings1.exe
 C:\Users\temp3rr0r\documents\visual studio 2015\Projects\NeighbourRings1\NeighbourRings1\obj\Debug\NeighbourRings1.pdb
 C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\bin\Debug\NeighbourRings1.exe.config
-C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\obj\Debug\NeighbourRings1.exe
-C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\obj\Debug\NeighbourRings1.pdb
 C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\bin\Debug\NeighbourRings1.exe
 C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\bin\Debug\NeighbourRings1.pdb
-C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\obj\Debug\NeighborhoodRings1.csprojResolveAssemblyReference.cache
-C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\obj\Debug\NeighborhoodRings1.FormNeighborhoodIndexFinder.resources
+C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\obj\Debug\NeighbourRings1.FormNeighborhoodIndexFinder.resources
 C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\obj\Debug\NeighbourRings1.Properties.Resources.resources
 C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\obj\Debug\NeighborhoodRings1.csproj.GenerateResource.Cache
+C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\obj\Debug\NeighbourRings1.exe
+C:\Users\temp3rr0r\Documents\Visual Studio 2015\Projects\NeighborhoodRings1\NeighborhoodRings1\obj\Debug\NeighbourRings1.pdb
